@@ -12,7 +12,16 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello World!"
+  get_time_job:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Now it is
         run: |
           date
+  get_file_contents:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: File Contents
         run: |
           ls
+      
